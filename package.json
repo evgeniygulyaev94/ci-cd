@@ -9,7 +9,11 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "test-unit": "vitest run",
-    "test-unit:watch": "vitest"
+    "test-unit:watch": "vitest",
+    "test:e2e": "node ./scripts/e2e.test.js",
+    "build:storybook": "node ./scripts/storybook.js",
+    "type:check": "node ./scripts/typecheck.js",
+    "i18n:check": "node ./scripts/i18n-check.js"
   },
   "dependencies": {
     "react": "^19.2.8",
