@@ -6,14 +6,14 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: [ 24.x ]
+        node-version: [ 22.x ]
     steps:
       - name: Staring Node.js `${{ matrix.node-version }}`
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
           node-version: ${{ matrix.node-version }}`
       - name: install modules
-        run: npm i
+        run: npm ci
       - name: build project
         run: npm run build
       - name: build storybook
