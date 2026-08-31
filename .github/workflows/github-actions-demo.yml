@@ -33,5 +33,3 @@ jobs:
 
       - name: lint code
         run: npm run lint
-
-      - run: echo "🍏 This job's status is ${{ job.status }}."
